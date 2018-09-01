@@ -97,11 +97,11 @@ Run the below command and create your new-ubuntu.iso (Ubuntu-18.04-desktop-autoi
 
 **GRAPHICS MODE**
 
-1) Download and install ISO Master from Ubuntu Software. Open ISO Master tool, this helps to reduce above steps (step-1 and step-2). Choose the original iso file and start editing
-
-2) Repeat Step-3 and Step-4
-
-3) Instead of Step-5, it's here
+1)Download and install ISO Master tool from Ubuntu Software. This tool helps to reduce above 1st two steps.  
+2)Open ISO Master tool, choose the original iso file. It will be in top panel. Double click on it, files inside iso file will be display in bottom panel.  
+3)Now start editing.  
+4)Repeat Step-3 and Step-4  
+5)Instead of Step-5, it's here  
 	File --> Save as --> new-ubuntu.iso file <<Ubuntu-18.04-desktop-autoinstall-amd64.iso>>
 
 
