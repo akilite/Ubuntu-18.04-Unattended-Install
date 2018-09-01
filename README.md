@@ -97,15 +97,19 @@ Run the below command and create your new-ubuntu.iso (Ubuntu-18.04-desktop-autoi
 
 **GRAPHICS MODE**
 
-1)  Download and install ISO Master tool from Ubuntu Software. This tool helps to reduce above 1st two steps.  
+1) Download and install ISO Master tool from Ubuntu Software. This tool helps to reduce above 1st two steps.  
 
-2)  Open ISO Master tool, choose the original iso file. It will be in top panel. Double click on it, files inside iso file will be display in bottom panel.  
+2) Open ISO Master tool, choose the original iso file from downloads or any other folder in your system. It will be in top panel. Double click on it, files inside iso file will be display in bottom panel.  
 
-3)  Now start editing.  
+3) Now start editing.  
 
-4. Repeat Step-3 and Step-4  
+4) Repeat above Step-3 and Step-4 like below  
+   --> Copy the content in step-3 and paste it in the isolinux.cfg file which is indie the /isolinux directory (/isolinux/isolinux.cfg path)  
+   --> Create the ks.preseed file in home directory and copy the content in above step-4 and paste it in ks.preseed file.  
+       Now in the top panel move to home directory, choose ks.pressed file and click on add button (which is between top and bottom panel).  
+       ks.preseed file will added below. NOTE: add ks.preseed file under root (/), not inside either /isolinux or /preseed directory 
 
-5. Instead of Step-5, it's here  
+5) Instead of Step-5, it's here  
 	File --> Save as --> new-ubuntu.iso file <<Ubuntu-18.04-desktop-autoinstall-amd64.iso>>
 
 
