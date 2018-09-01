@@ -103,9 +103,9 @@ Run the below command and create your new-ubuntu.iso (Ubuntu-18.04-desktop-autoi
 
 3)  Now start editing.  
 
-4)  Repeat Step-3 and Step-4  
+4. Repeat Step-3 and Step-4  
 
-5)  Instead of Step-5, it's here  
+5. Instead of Step-5, it's here  
 	File --> Save as --> new-ubuntu.iso file <<Ubuntu-18.04-desktop-autoinstall-amd64.iso>>
 
 
