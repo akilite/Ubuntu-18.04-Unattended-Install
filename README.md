@@ -15,16 +15,13 @@ HOW TO INSTALL
 **COMMAND LINE MODE**
 
 Step-1
-
 Creat /iso directory inside /mnt and copy the downloaded 'ubuntu-18.04-Desktop-amd64.iso' to /mnt/iso directory.
 
 		mkdir -p /mnt/iso
 		mount -o loop /home/user/Downloads/ubuntu-18.04-Desktop-amd64.iso /mnt/iso
 
 Step-2
-
-Create /ubuntuiso directory inside /opt and copy 'ubuntu-18.04-Desktop-amd64.iso' from /mnt/iso directory to /opt/ubuntuiso directory.  
-Now you can edit the iso file inside /opt/ubuntuiso directory.
+Create /ubuntuiso directory inside /opt and copy 'ubuntu-18.04-Desktop-amd64.iso' from /mnt/iso directory to /opt/ubuntuiso directory. Now you can edit the iso file inside /opt/ubuntuiso directory.
 
 		mkdir -p /opt/ubuntuiso
 		cp -rT /mnt/iso /opt/ubuntuiso
