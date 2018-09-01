@@ -105,11 +105,11 @@ Run the below command and create your new-ubuntu.iso (Ubuntu-18.04-desktop-autoi
 
 4) Repeat above Step-3 and Step-4 like below  
 --> Copy the content in step-3 and paste it in the isolinux.cfg file which is indie the /isolinux directory(/isolinux/isolinux.cfg).  
---> Create the ks.preseed file in home directory and copy the content in above step-4 and paste it in ks.preseed file.  
-   Now in the top panel move to home directory, choose ks.pressed file and click on add button (which is between top and bottom panel).  
-ks.preseed file will added below. NOTE: add ks.preseed file under root (/), not inside either /isolinux or /preseed directory 
+--> Create ks.preseed file in home directory and copy the content in above step-4 and paste it in ks.preseed file.  
+    Now in the top panel move to home directory, choose ks.pressed file and click on add button (which is between top and bottom panel).  
+    ks.preseed file will added below. NOTE: add ks.preseed file under root (/), not inside either /isolinux or /preseed directory 
 
-5) Instead of Step-5, it's here  
+5) Finally save the new iso file. Instead of Step-5 in above, it's here  
 	File --> Save as --> new-ubuntu.iso file <<Ubuntu-18.04-desktop-autoinstall-amd64.iso>>
 
 
