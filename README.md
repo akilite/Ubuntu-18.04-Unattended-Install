@@ -14,20 +14,19 @@ HOW TO INSTALL
 
 **COMMAND LINE MODE**
 
-Step-1
+Step-1  
 Creat /iso directory inside /mnt and copy the downloaded 'ubuntu-18.04-Desktop-amd64.iso' to /mnt/iso directory.
 
 		mkdir -p /mnt/iso
 		mount -o loop /home/user/Downloads/ubuntu-18.04-Desktop-amd64.iso /mnt/iso
 
-Step-2
+Step-2  
 Create /ubuntuiso directory inside /opt and copy 'ubuntu-18.04-Desktop-amd64.iso' from /mnt/iso directory to /opt/ubuntuiso directory. Now you can edit the iso file inside /opt/ubuntuiso directory.
 
 		mkdir -p /opt/ubuntuiso
 		cp -rT /mnt/iso /opt/ubuntuiso
 
-Step-3
-
+Step-3  
 Edit the file isolinux.cfg (/opt/ubuntuiso/isolinux/isolinux.cfg path) and replace everything with below content.
 
 		default live-install
@@ -36,8 +35,7 @@ Edit the file isolinux.cfg (/opt/ubuntuiso/isolinux/isolinux.cfg path) and repla
 			kernel /casper/vmlinuz
 			append  file=/cdrom/ks.preseed auto=true priority=critical debian-installer/locale=en_US keyboard-configuration/layoutcode=us ubiquity/reboot=true languagechooser/language-name=English countrychooser/shortlist=US localechooser/supported-locales=en_US.UTF-8 boot=casper automatic-ubiquity initrd=/casper/initrd.lz quiet splash noprompt noshell ---
 
-Step-4
-
+Step-4  
 -Create a file named ks.preseed (/opt/ubuntuiso/ks.preseed path) and paste the below content as it is.  
 -The below preseed file suits good to above isolinux.cfg file.  
 -This preseed file includes all disk partition, network, timezone, package, mirrors, account(user/root), grub. This is the one make installation automatic and this preseed file called by above isolinux.cfg file. 
@@ -91,8 +89,7 @@ Step-4
 		d-i finish-install/reboot_in_progress note
 		### Custom Commands
 
-Step-5
-
+Step-5  
 Run the below command and create your new-ubuntu.iso (autoinstall.iso) file.
 
 		mkisofs -D -r -V ATTENDLESS_UBUNTU -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o /opt/autoinstall.iso /opt/ubuntuiso
