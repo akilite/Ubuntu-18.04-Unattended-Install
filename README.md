@@ -90,9 +90,9 @@ Step-4
 		### Custom Commands
 
 Step-5  
-Run the below command and create your new-ubuntu.iso (autoinstall.iso) file.
+Run the below command and create your new-ubuntu.iso (Ubuntu-18.04-desktop-autoinstall-amd64.iso) file.
 
-		mkisofs -D -r -V ATTENDLESS_UBUNTU -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o /opt/autoinstall.iso /opt/ubuntuiso
+		mkisofs -D -r -V UNATTENDED_UBUNTU_INSTALL -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o /opt/Ubuntu-18.04-desktop-autoinstall-amd64.iso /opt/ubuntuiso
 
 
 **GRAPHICS MODE**
@@ -102,6 +102,6 @@ Run the below command and create your new-ubuntu.iso (autoinstall.iso) file.
 2) Repeat Step-3 and Step-4
 
 3) Instead of Step-5, it's here
-	File --> Save as --> new-ubuntu.iso file <<autoinstall.iso>>
+	File --> Save as --> new-ubuntu.iso file <<Ubuntu-18.04-desktop-autoinstall-amd64.iso>>
 
 
